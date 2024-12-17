@@ -4,15 +4,6 @@ This sample shows how to create a customer and subscribe them to a plan with
 [Stripe Billing](https://stripe.com/billing). For the official documentation
 for Stripe billing checkout the [overview](https://stripe.com/docs/billing).
 
-|                                                                                                                             |        [Checkout](https://github.com/stripe-samples/checkout-single-subscription)        |                                                          [Fixed-price-subscriptions with Elements](./fixed-price-subscriptions)                                                          |                                                                           [Usage-based-subscriptions with Elements](./usage-based-subscriptions)                                                                           |
-| :-------------------------------------------------------------------------------------------------------------------------- | :--------------------------------------------------------------------------------------: | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
-| **Demo** | [checkout.stripe.dev](https://checkout.stripe.dev) |  |  |  |
-| **Define prices in: CLI, Dashboard, or API** Create a price with the Stripe: CLI, Dashboard, or API.                        |                                            ✅                                            |                                                                                            ✅                                                                                            |                                                                                                             ✅                                                                                                             |
-| **Charge users a fixed price on a recurring basis** Create a subscription with a fixed price recurring monthly/yearly/etc.  |                                            ✅                                            |                                                                                            ✅                                                                                            |                                                                                                                                                                                                                            |
-| **Charge customers based on their usage.** Create a metered subscriptions so you can charge customers based on their usage. |                                            ✅                                            |                                                                                                                                                                                          |                                                                                                             ✅                                                                                                             |
-| **Apple Pay & Google Pay support**                                                                                          |                            ✅ Built in, no extra code needed                             |                                                                                                                                                                                          |                                                                                                                                                                                                                            |
-| **Coupon support for subscriptions**                                                                                        |                                            ✅                                            |                                                                                            ✅                                                                                            |                                                                                                             ✅                                                                                                             |
-
 The hosted demos linked above are running in test mode -- use
 `4242424242424242` as a test card number with any CVC + future expiration date.
 
@@ -226,7 +217,6 @@ curl https://api.stripe.com/v1/prices \
   -d "lookup_key"=sample_premium \
 ```
 
-
 ## `.env` config
 
 Example configuration file [`.env.example`](./.env.example)
@@ -246,28 +236,14 @@ that helps you roadmap how to integrate Stripe within your own system
 independent of the framework.
 
 ## Get support
+
 If you found a bug or want to suggest a new [feature/use case/sample], please [file an issue](../../issues).
 
 If you have questions, comments, or need help with code, we're here to help:
+
 - on [Discord](https://stripe.com/go/developer-chat)
 - on Twitter at [@StripeDev](https://twitter.com/StripeDev)
 - on Stack Overflow at the [stripe-payments](https://stackoverflow.com/tags/stripe-payments/info) tag
 - by [email](mailto:support+github@stripe.com)
 
 Sign up to [stay updated with developer news](https://go.stripe.global/dev-digest).
-
-## Author(s)
-
-- [@ctrudeau-stripe](https://twitter.com/trudeaucj)
-- [@suz-stripe](https://twitter.com/noopkat)
-- [@dawn-stripe](https://twitter.com/dawnlambeth)
-- [@cjavilla-stripe](https://twitter.com/cjav_dev)
-
-
-## Contributors
-
-<a href="https://github.com/stripe-samples/subscription-use-cases/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=stripe-samples/subscription-use-cases" />
-</a>
-
-Made with [contrib.rocks](https://contrib.rocks).
